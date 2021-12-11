@@ -13,9 +13,12 @@
 		A80E8F6F2764937600E457FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F6D2764937600E457FD /* Main.storyboard */; };
 		A80E8F712764937700E457FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F702764937700E457FD /* Assets.xcassets */; };
 		A80E8F742764937700E457FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F722764937700E457FD /* LaunchScreen.storyboard */; };
+		CDCCE11B360F65381FD3B008 /* Pods_SeparateCollectionAlphaGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DB2E3546E8121EC82092E1 /* Pods_SeparateCollectionAlphaGo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30DB2E3546E8121EC82092E1 /* Pods_SeparateCollectionAlphaGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeparateCollectionAlphaGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89FA930164D6E826069C55DE /* Pods-SeparateCollectionAlphaGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparateCollectionAlphaGo.debug.xcconfig"; path = "Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo.debug.xcconfig"; sourceTree = "<group>"; };
 		A80E8F642764937600E457FD /* SeparateCollectionAlphaGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeparateCollectionAlphaGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80E8F672764937600E457FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A80E8F692764937600E457FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A80E8F702764937700E457FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80E8F732764937700E457FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A80E8F752764937700E457FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01001CCF31CAA7247BC2B05 /* Pods-SeparateCollectionAlphaGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparateCollectionAlphaGo.release.xcconfig"; path = "Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDCCE11B360F65381FD3B008 /* Pods_SeparateCollectionAlphaGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BBD6B35B1867753D27628AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30DB2E3546E8121EC82092E1 /* Pods_SeparateCollectionAlphaGo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A80E8F5B2764937600E457FD = {
 			isa = PBXGroup;
 			children = (
 				A80E8F662764937600E457FD /* SeparateCollectionAlphaGo */,
 				A80E8F652764937600E457FD /* Products */,
+				FF92362697074FB671C59AD3 /* Pods */,
+				8BBD6B35B1867753D27628AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = SeparateCollectionAlphaGo;
 			sourceTree = "<group>";
 		};
+		FF92362697074FB671C59AD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89FA930164D6E826069C55DE /* Pods-SeparateCollectionAlphaGo.debug.xcconfig */,
+				F01001CCF31CAA7247BC2B05 /* Pods-SeparateCollectionAlphaGo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A80E8F782764937700E457FD /* Build configuration list for PBXNativeTarget "SeparateCollectionAlphaGo" */;
 			buildPhases = (
+				2FD5F883D644742F2671BCCB /* [CP] Check Pods Manifest.lock */,
 				A80E8F602764937600E457FD /* Sources */,
 				A80E8F612764937600E457FD /* Frameworks */,
 				A80E8F622764937600E457FD /* Resources */,
+				928B62B7F472A6DB3C147C52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FD5F883D644742F2671BCCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeparateCollectionAlphaGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		928B62B7F472A6DB3C147C52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A80E8F602764937600E457FD /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		A80E8F792764937700E457FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FA930164D6E826069C55DE /* Pods-SeparateCollectionAlphaGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		A80E8F7A2764937700E457FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F01001CCF31CAA7247BC2B05 /* Pods-SeparateCollectionAlphaGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
