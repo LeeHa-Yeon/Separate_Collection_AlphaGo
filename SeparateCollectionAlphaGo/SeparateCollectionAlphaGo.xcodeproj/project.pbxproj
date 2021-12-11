@@ -12,6 +12,8 @@
 		A80E8F6C2764937600E457FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F6B2764937600E457FD /* ViewController.swift */; };
 		A80E8F712764937700E457FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F702764937700E457FD /* Assets.xcassets */; };
 		A80E8F742764937700E457FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F722764937700E457FD /* LaunchScreen.storyboard */; };
+		A80E8F812764968D00E457FD /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F802764968D00E457FD /* TabbarViewController.swift */; };
+		A80E8F88276497C300E457FD /* WasteMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F87276497C300E457FD /* WasteMapViewController.swift */; };
 		CDCCE11B360F65381FD3B008 /* Pods_SeparateCollectionAlphaGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DB2E3546E8121EC82092E1 /* Pods_SeparateCollectionAlphaGo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		A80E8F702764937700E457FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80E8F732764937700E457FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A80E8F752764937700E457FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80E8F802764968D00E457FD /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		A80E8F87276497C300E457FD /* WasteMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteMapViewController.swift; sourceTree = "<group>"; };
 		F01001CCF31CAA7247BC2B05 /* Pods-SeparateCollectionAlphaGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparateCollectionAlphaGo.release.xcconfig"; path = "Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +73,96 @@
 		A80E8F662764937600E457FD /* SeparateCollectionAlphaGo */ = {
 			isa = PBXGroup;
 			children = (
-				A80E8F672764937600E457FD /* AppDelegate.swift */,
-				A80E8F692764937600E457FD /* SceneDelegate.swift */,
-				A80E8F6B2764937600E457FD /* ViewController.swift */,
-				A80E8F702764937700E457FD /* Assets.xcassets */,
-				A80E8F722764937700E457FD /* LaunchScreen.storyboard */,
+				A80E8F7D2764964700E457FD /* Application */,
+				A80E8F7B2764962400E457FD /* Resource */,
+				A80E8F7E2764966200E457FD /* Source */,
 				A80E8F752764937700E457FD /* Info.plist */,
 			);
 			path = SeparateCollectionAlphaGo;
+			sourceTree = "<group>";
+		};
+		A80E8F7B2764962400E457FD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A80E8F7C2764962F00E457FD /* Extension */,
+				A80E8F702764937700E457FD /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A80E8F7C2764962F00E457FD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A80E8F7D2764964700E457FD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A80E8F672764937600E457FD /* AppDelegate.swift */,
+				A80E8F692764937600E457FD /* SceneDelegate.swift */,
+				A80E8F722764937700E457FD /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A80E8F7E2764966200E457FD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A80E8F842764978000E457FD /* Model */,
+				A80E8F822764977000E457FD /* View */,
+				A80E8F832764977900E457FD /* ViewModel */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A80E8F7F2764967300E457FD /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A80E8F802764968D00E457FD /* TabbarViewController.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		A80E8F822764977000E457FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A80E8F852764978D00E457FD /* Home */,
+				A80E8F86276497A300E457FD /* WasteMap */,
+				A80E8F7F2764967300E457FD /* Tab */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A80E8F832764977900E457FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A80E8F842764978000E457FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A80E8F852764978D00E457FD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A80E8F6B2764937600E457FD /* ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A80E8F86276497A300E457FD /* WasteMap */ = {
+			isa = PBXGroup;
+			children = (
+				A80E8F87276497C300E457FD /* WasteMapViewController.swift */,
+			);
+			path = WasteMap;
 			sourceTree = "<group>";
 		};
 		FF92362697074FB671C59AD3 /* Pods */ = {
@@ -202,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80E8F812764968D00E457FD /* TabbarViewController.swift in Sources */,
 				A80E8F6C2764937600E457FD /* ViewController.swift in Sources */,
+				A80E8F88276497C300E457FD /* WasteMapViewController.swift in Sources */,
 				A80E8F682764937600E457FD /* AppDelegate.swift in Sources */,
 				A80E8F6A2764937600E457FD /* SceneDelegate.swift in Sources */,
 			);
