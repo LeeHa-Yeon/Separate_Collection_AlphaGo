@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  Pods
+//
+//  Created by 송정훈 on 2021/12/12.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+CLIENT_ID = "60sn29ukd5"

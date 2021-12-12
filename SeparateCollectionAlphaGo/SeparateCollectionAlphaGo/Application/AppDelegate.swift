@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import NMapsMap
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             appearanceTB.backgroundColor = .systemBackground
             tabBar.standardAppearance = appearanceTB;
             UITabBar.appearance().scrollEdgeAppearance = appearanceTB
-            
+            var clientId = Bundle.main.object(forInfoDictionaryKey: "NMFClientId")! as? String
+            clientId = clientId?.trimmingCharacters(in: ["\""])
+            NMFAuthManager.shared().clientId = clientId
         }
         
         return true
