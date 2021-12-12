@@ -23,3 +23,4 @@ struct WasteMapView_Previews: PreviewProvider {
     }
 }
 
+
