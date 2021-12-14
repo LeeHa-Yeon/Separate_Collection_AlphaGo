@@ -11,7 +11,7 @@ import UIKit
 import Combine
 
 struct NaverMapView: UIViewRepresentable {
-    @ObservedObject var locationViewModel:LocationViewModel = LocationViewModel()
+    @ObservedObject var locationViewModel:MapViewModel = MapViewModel()
     
     func makeUIView(context: Context) -> NMFNaverMapView {
         let view = NMFNaverMapView()

@@ -11,7 +11,9 @@
 		A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECB2765C60300EA7E18 /* WasteMapView.swift */; };
 		A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */; };
 		A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEDC2765F37E00EA7E18 /* LocationService.swift */; };
-		A78BCEDF2765F3C000EA7E18 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEDE2765F3C000EA7E18 /* LocationViewModel.swift */; };
+		A78BCEDF2765F3C000EA7E18 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEDE2765F3C000EA7E18 /* MapViewModel.swift */; };
+		A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */; };
+		A7E2C9EB2768A02600FCF54A /* TrashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C9EA2768A02600FCF54A /* TrashService.swift */; };
 		A80E8F682764937600E457FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F672764937600E457FD /* AppDelegate.swift */; };
 		A80E8F6A2764937600E457FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F692764937600E457FD /* SceneDelegate.swift */; };
 		A80E8F712764937700E457FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F702764937700E457FD /* Assets.xcassets */; };
@@ -28,7 +30,9 @@
 		A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMap.swift; sourceTree = "<group>"; };
 		A78BCED92765D4D400EA7E18 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		A78BCEDC2765F37E00EA7E18 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		A78BCEDE2765F3C000EA7E18 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationViewModel.swift; path = SeparateCollectionAlphaGo/Source/Service/LocationViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A78BCEDE2765F3C000EA7E18 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewModel.swift; path = SeparateCollectionAlphaGo/Source/Service/MapViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAPIResponse.swift; sourceTree = "<group>"; };
+		A7E2C9EA2768A02600FCF54A /* TrashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashService.swift; sourceTree = "<group>"; };
 		A80E8F642764937600E457FD /* SeparateCollectionAlphaGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeparateCollectionAlphaGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80E8F672764937600E457FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A80E8F692764937600E457FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,9 +66,19 @@
 		A78BCEDB2765F37400EA7E18 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A7E2C9E727689C6400FCF54A /* Entities */,
 				A78BCEDC2765F37E00EA7E18 /* LocationService.swift */,
+				A7E2C9EA2768A02600FCF54A /* TrashService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		A7E2C9E727689C6400FCF54A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		A80E8F5B2764937600E457FD = {
@@ -155,7 +169,7 @@
 		A80E8F832764977900E457FD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A78BCEDE2765F3C000EA7E18 /* LocationViewModel.swift */,
+				A78BCEDE2765F3C000EA7E18 /* MapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -310,11 +324,13 @@
 				A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */,
 				A80E8F812764968D00E457FD /* TabbarViewController.swift in Sources */,
 				A78BCEC827649B6D00EA7E18 /* HomeView.swift in Sources */,
+				A7E2C9EB2768A02600FCF54A /* TrashService.swift in Sources */,
 				A80E8F682764937600E457FD /* AppDelegate.swift in Sources */,
 				A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */,
+				A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */,
 				A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */,
 				A80E8F6A2764937600E457FD /* SceneDelegate.swift in Sources */,
-				A78BCEDF2765F3C000EA7E18 /* LocationViewModel.swift in Sources */,
+				A78BCEDF2765F3C000EA7E18 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
