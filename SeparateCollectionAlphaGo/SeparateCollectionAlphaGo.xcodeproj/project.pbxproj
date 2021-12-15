@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9F8FBC63276AA2BE0028DC99 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC62276AA2BE0028DC99 /* PreviewView.swift */; };
+		9F8FBC66276AA3770028DC99 /* LodingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC65276AA3770028DC99 /* LodingViewController.swift */; };
+		9F8FBC6A276AA4560028DC99 /* trash1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC68276AA4560028DC99 /* trash1.json */; };
+		9F8FBC6B276AA4560028DC99 /* trash2.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC69276AA4560028DC99 /* trash2.json */; };
 		A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */; };
 		A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECB2765C60300EA7E18 /* WasteMapView.swift */; };
 		A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */; };
@@ -29,6 +32,9 @@
 		89FA930164D6E826069C55DE /* Pods-SeparateCollectionAlphaGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparateCollectionAlphaGo.debug.xcconfig"; path = "Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo.debug.xcconfig"; sourceTree = "<group>"; };
 		9F8FBC60276A97820028DC99 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		9F8FBC62276AA2BE0028DC99 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		9F8FBC65276AA3770028DC99 /* LodingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LodingViewController.swift; sourceTree = "<group>"; };
+		9F8FBC68276AA4560028DC99 /* trash1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trash1.json; sourceTree = "<group>"; };
+		9F8FBC69276AA4560028DC99 /* trash2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trash2.json; sourceTree = "<group>"; };
 		A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A78BCECB2765C60300EA7E18 /* WasteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteMapView.swift; sourceTree = "<group>"; };
 		A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMap.swift; sourceTree = "<group>"; };
@@ -73,6 +79,23 @@
 				A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9F8FBC64276AA35C0028DC99 /* Loding */ = {
+			isa = PBXGroup;
+			children = (
+				9F8FBC65276AA3770028DC99 /* LodingViewController.swift */,
+			);
+			path = Loding;
+			sourceTree = "<group>";
+		};
+		9F8FBC67276AA42D0028DC99 /* JSONFile */ = {
+			isa = PBXGroup;
+			children = (
+				9F8FBC68276AA4560028DC99 /* trash1.json */,
+				9F8FBC69276AA4560028DC99 /* trash2.json */,
+			);
+			path = JSONFile;
 			sourceTree = "<group>";
 		};
 		A78BCEDB2765F37400EA7E18 /* Service */ = {
@@ -126,6 +149,7 @@
 		A80E8F7B2764962400E457FD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9F8FBC67276AA42D0028DC99 /* JSONFile */,
 				A80E8F7C2764962F00E457FD /* Extension */,
 				A80E8F702764937700E457FD /* Assets.xcassets */,
 			);
@@ -171,6 +195,7 @@
 		A80E8F822764977000E457FD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9F8FBC64276AA35C0028DC99 /* Loding */,
 				A80E8F852764978D00E457FD /* Home */,
 				A89B44342769230C001072D7 /* SeparateCollectionGuide */,
 				A80E8F86276497A300E457FD /* WasteMap */,
@@ -305,8 +330,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8FBC6A276AA4560028DC99 /* trash1.json in Resources */,
 				A80E8F742764937700E457FD /* LaunchScreen.storyboard in Resources */,
 				A80E8F712764937700E457FD /* Assets.xcassets in Resources */,
+				9F8FBC6B276AA4560028DC99 /* trash2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +395,7 @@
 				A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */,
 				A89B44382769244D001072D7 /* SeparateCollectionGuideViewController.swift in Sources */,
 				A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */,
+				9F8FBC66276AA3770028DC99 /* LodingViewController.swift in Sources */,
 				A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */,
 				A80E8F6A2764937600E457FD /* SceneDelegate.swift in Sources */,
 				A78BCEDF2765F3C000EA7E18 /* MapViewModel.swift in Sources */,
