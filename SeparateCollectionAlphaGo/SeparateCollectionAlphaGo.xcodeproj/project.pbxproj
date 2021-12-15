@@ -17,6 +17,9 @@
 		9F8FBC75276AB5A30028DC99 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC74276AB5A30028DC99 /* ImagePredictor.swift */; };
 		9F8FBC78276AB6040028DC99 /* VNClassificationObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC77276AB6040028DC99 /* VNClassificationObservation.swift */; };
 		9F8FBC7A276AB6170028DC99 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC79276AB6170028DC99 /* CGImagePropertyOrientation.swift */; };
+		9F8FBC7C276AB6810028DC99 /* RecycleClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC7B276AB6810028DC99 /* RecycleClassifier.mlmodel */; };
+		9F8FBC7F276AB6A40028DC99 /* NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC7D276AB6A40028DC99 /* NOTICE.txt */; };
+		9F8FBC80276AB6A40028DC99 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC7E276AB6A40028DC99 /* LICENSE.txt */; };
 		A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */; };
 		A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECB2765C60300EA7E18 /* WasteMapView.swift */; };
 		A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */; };
@@ -47,6 +50,9 @@
 		9F8FBC74276AB5A30028DC99 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
 		9F8FBC77276AB6040028DC99 /* VNClassificationObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNClassificationObservation.swift; sourceTree = "<group>"; };
 		9F8FBC79276AB6170028DC99 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		9F8FBC7B276AB6810028DC99 /* RecycleClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RecycleClassifier.mlmodel; sourceTree = "<group>"; };
+		9F8FBC7D276AB6A40028DC99 /* NOTICE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
+		9F8FBC7E276AB6A40028DC99 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A78BCECB2765C60300EA7E18 /* WasteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteMapView.swift; sourceTree = "<group>"; };
 		A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMap.swift; sourceTree = "<group>"; };
@@ -249,6 +255,9 @@
 		A80E8F842764978000E457FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9F8FBC7B276AB6810028DC99 /* RecycleClassifier.mlmodel */,
+				9F8FBC7E276AB6A40028DC99 /* LICENSE.txt */,
+				9F8FBC7D276AB6A40028DC99 /* NOTICE.txt */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -364,6 +373,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8FBC80276AB6A40028DC99 /* LICENSE.txt in Resources */,
+				9F8FBC7F276AB6A40028DC99 /* NOTICE.txt in Resources */,
 				9F8FBC6A276AA4560028DC99 /* trash1.json in Resources */,
 				A80E8F742764937700E457FD /* LaunchScreen.storyboard in Resources */,
 				A80E8F712764937700E457FD /* Assets.xcassets in Resources */,
@@ -426,6 +437,7 @@
 				A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */,
 				A7E2C9EB2768A02600FCF54A /* TrashService.swift in Sources */,
 				A80E8F682764937600E457FD /* AppDelegate.swift in Sources */,
+				9F8FBC7C276AB6810028DC99 /* RecycleClassifier.mlmodel in Sources */,
 				9F8FBC63276AA2BE0028DC99 /* PreviewView.swift in Sources */,
 				A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */,
 				A89B44382769244D001072D7 /* SeparateCollectionGuideViewController.swift in Sources */,
