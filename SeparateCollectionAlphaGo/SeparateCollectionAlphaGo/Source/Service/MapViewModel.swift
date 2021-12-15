@@ -10,6 +10,11 @@ import Combine
 
 class MapViewModel: ObservableObject {
     private let locationService: LocationService = LocationService()
+    private let trashService: TrashService = TrashService()
+    
+    init() {
+        trashService.search("광명시")
+    }
     
     func getLocation() -> AnyPublisher<CLLocation?, Never> {
         return locationService.locationSubject.eraseToAnyPublisher()
