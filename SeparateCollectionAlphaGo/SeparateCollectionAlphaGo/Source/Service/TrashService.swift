@@ -8,9 +8,10 @@
 import Foundation
 import Alamofire
 import Combine
+import SWXMLHash
 
 class TrashService {
-    private let endPoint = "http://api.data.go.kr/openapi/tn_pubr_public_lvlh_trash_api"
+    private let endPoint = "https://openapi.gg.go.kr/Livelhwstemisninfo"
     private var apiKey: String? {
         guard let apiKey = (Bundle.main.object(forInfoDictionaryKey: "OpenAPIKey")! as? String)?.replacingOccurrences(of: "\"", with: "") else {
             return nil
@@ -24,20 +25,18 @@ class TrashService {
         case unknownError
     }
     
-    func search(_ word: String, _ page: Int) throws -> AnyPublisher<OpenAPIResponse, Error> {
-        guard let apiKey = apiKey else { throw APIError.missingAPIKey }
+    func search(_ word: String) {
+//        guard let apiKey = apiKey else { throw APIError.missingAPIKey }
         let parameters: [String: Any] = [
-            "serviceKey": apiKey,
+            "SIGUN_NM": word,
         ]
-        return Future<OpenAPIResponse, Error> { promise in
-            AF.request(self.endPoint, parameters: parameters).validate().publishDecodable(type: OpenAPIResponse.self).result().sink { result in
-                switch result {
-                case let .success(response):
-                    promise(.success(response))
-                case .failure:
-                    promise(.failure(APIError.unknownError))
-                }
-            }.store(in: &self.storage)
-        }.eraseToAnyPublisher()
+        let pullPath = self.endPoint + "?\(apiKey!)"
+        print(pullPath)
+        AF.request(pullPath, parameters: parameters).response { response in
+            print(response.data)
+            let xml = XMLHash.parse(response.data!)
+            print(xml)
+            print(xml["Livelhwstemisninfo"]["row"]["EMISN_PLC"].element?.text)   
+        }
     }
 }

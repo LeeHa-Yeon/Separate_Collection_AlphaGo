@@ -14,6 +14,7 @@
 		A78BCEDF2765F3C000EA7E18 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEDE2765F3C000EA7E18 /* MapViewModel.swift */; };
 		A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */; };
 		A7E2C9EB2768A02600FCF54A /* TrashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C9EA2768A02600FCF54A /* TrashService.swift */; };
+		A7E2CA092769E6CB00FCF54A /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A7E2CA082769E6CB00FCF54A /* Config.xcconfig */; };
 		A80E8F682764937600E457FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F672764937600E457FD /* AppDelegate.swift */; };
 		A80E8F6A2764937600E457FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F692764937600E457FD /* SceneDelegate.swift */; };
 		A80E8F712764937700E457FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F702764937700E457FD /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		A78BCEDE2765F3C000EA7E18 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewModel.swift; path = SeparateCollectionAlphaGo/Source/Service/MapViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAPIResponse.swift; sourceTree = "<group>"; };
 		A7E2C9EA2768A02600FCF54A /* TrashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashService.swift; sourceTree = "<group>"; };
+		A7E2CA082769E6CB00FCF54A /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../Config.xcconfig; sourceTree = "<group>"; };
 		A80E8F642764937600E457FD /* SeparateCollectionAlphaGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeparateCollectionAlphaGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80E8F672764937600E457FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A80E8F692764937600E457FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +42,6 @@
 		A80E8F732764937700E457FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A80E8F752764937700E457FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A80E8F802764968D00E457FD /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
-		A89B443327690F8F001072D7 /* mumu.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = mumu.xcconfig; sourceTree = "<group>"; };
 		A89B44372769244D001072D7 /* SeparateCollectionGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateCollectionGuideViewController.swift; sourceTree = "<group>"; };
 		F01001CCF31CAA7247BC2B05 /* Pods-SeparateCollectionAlphaGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparateCollectionAlphaGo.release.xcconfig"; path = "Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +109,7 @@
 				A80E8F7B2764962400E457FD /* Resource */,
 				A80E8F7E2764966200E457FD /* Source */,
 				A80E8F752764937700E457FD /* Info.plist */,
-				A89B443327690F8F001072D7 /* mumu.xcconfig */,
+				A7E2CA082769E6CB00FCF54A /* Config.xcconfig */,
 			);
 			path = SeparateCollectionAlphaGo;
 			sourceTree = "<group>";
@@ -295,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A80E8F742764937700E457FD /* LaunchScreen.storyboard in Resources */,
+				A7E2CA092769E6CB00FCF54A /* Config.xcconfig in Resources */,
 				A80E8F712764937700E457FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +380,7 @@
 /* Begin XCBuildConfiguration section */
 		A80E8F762764937700E457FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7E2CA082769E6CB00FCF54A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -439,6 +442,7 @@
 		};
 		A80E8F772764937700E457FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7E2CA082769E6CB00FCF54A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -500,7 +504,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7W64WHVKVN;
+				DEVELOPMENT_TEAM = CH57QT784A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeparateCollectionAlphaGo/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "네이버 지도에서 현위치를 표시하기 위해 위치정보가 사용됩니다.";
@@ -514,7 +518,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo.mumu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -530,7 +534,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7W64WHVKVN;
+				DEVELOPMENT_TEAM = CH57QT784A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeparateCollectionAlphaGo/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "네이버 지도에서 현위치를 표시하기 위해 위치정보가 사용됩니다.";
@@ -544,7 +548,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo.mumu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
