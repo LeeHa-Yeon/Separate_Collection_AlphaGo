@@ -11,6 +11,9 @@
 		9F8FBC66276AA3770028DC99 /* LodingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC65276AA3770028DC99 /* LodingViewController.swift */; };
 		9F8FBC6A276AA4560028DC99 /* trash1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC68276AA4560028DC99 /* trash1.json */; };
 		9F8FBC6B276AA4560028DC99 /* trash2.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC69276AA4560028DC99 /* trash2.json */; };
+		9F8FBC6D276AB09A0028DC99 /* HowToUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC6C276AB09A0028DC99 /* HowToUseViewController.swift */; };
+		9F8FBC6F276AB0D10028DC99 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC6E276AB0D10028DC99 /* CameraViewController.swift */; };
+		9F8FBC71276AB0EC0028DC99 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC70276AB0EC0028DC99 /* PhotoViewController.swift */; };
 		A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */; };
 		A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECB2765C60300EA7E18 /* WasteMapView.swift */; };
 		A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */; };
@@ -35,6 +38,9 @@
 		9F8FBC65276AA3770028DC99 /* LodingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LodingViewController.swift; sourceTree = "<group>"; };
 		9F8FBC68276AA4560028DC99 /* trash1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trash1.json; sourceTree = "<group>"; };
 		9F8FBC69276AA4560028DC99 /* trash2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trash2.json; sourceTree = "<group>"; };
+		9F8FBC6C276AB09A0028DC99 /* HowToUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseViewController.swift; sourceTree = "<group>"; };
+		9F8FBC6E276AB0D10028DC99 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		9F8FBC70276AB0EC0028DC99 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A78BCECB2765C60300EA7E18 /* WasteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteMapView.swift; sourceTree = "<group>"; };
 		A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMap.swift; sourceTree = "<group>"; };
@@ -77,6 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */,
+				9F8FBC6C276AB09A0028DC99 /* HowToUseViewController.swift */,
+				9F8FBC6E276AB0D10028DC99 /* CameraViewController.swift */,
+				9F8FBC70276AB0EC0028DC99 /* PhotoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -396,7 +405,10 @@
 				A89B44382769244D001072D7 /* SeparateCollectionGuideViewController.swift in Sources */,
 				A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */,
 				9F8FBC66276AA3770028DC99 /* LodingViewController.swift in Sources */,
+				9F8FBC6D276AB09A0028DC99 /* HowToUseViewController.swift in Sources */,
+				9F8FBC6F276AB0D10028DC99 /* CameraViewController.swift in Sources */,
 				A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */,
+				9F8FBC71276AB0EC0028DC99 /* PhotoViewController.swift in Sources */,
 				A80E8F6A2764937600E457FD /* SceneDelegate.swift in Sources */,
 				A78BCEDF2765F3C000EA7E18 /* MapViewModel.swift in Sources */,
 			);
