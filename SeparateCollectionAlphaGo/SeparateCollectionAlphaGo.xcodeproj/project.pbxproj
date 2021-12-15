@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A78BCEC827649B6D00EA7E18 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEC727649B6D00EA7E18 /* HomeView.swift */; };
+		A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */; };
 		A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECB2765C60300EA7E18 /* WasteMapView.swift */; };
 		A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */; };
 		A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEDC2765F37E00EA7E18 /* LocationService.swift */; };
@@ -19,16 +19,16 @@
 		A80E8F712764937700E457FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F702764937700E457FD /* Assets.xcassets */; };
 		A80E8F742764937700E457FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F722764937700E457FD /* LaunchScreen.storyboard */; };
 		A80E8F812764968D00E457FD /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F802764968D00E457FD /* TabbarViewController.swift */; };
+		A89B44382769244D001072D7 /* SeparateCollectionGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B44372769244D001072D7 /* SeparateCollectionGuideViewController.swift */; };
 		CDCCE11B360F65381FD3B008 /* Pods_SeparateCollectionAlphaGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DB2E3546E8121EC82092E1 /* Pods_SeparateCollectionAlphaGo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30DB2E3546E8121EC82092E1 /* Pods_SeparateCollectionAlphaGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeparateCollectionAlphaGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FA930164D6E826069C55DE /* Pods-SeparateCollectionAlphaGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparateCollectionAlphaGo.debug.xcconfig"; path = "Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo.debug.xcconfig"; sourceTree = "<group>"; };
-		A78BCEC727649B6D00EA7E18 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A78BCECB2765C60300EA7E18 /* WasteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteMapView.swift; sourceTree = "<group>"; };
 		A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMap.swift; sourceTree = "<group>"; };
-		A78BCED92765D4D400EA7E18 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		A78BCEDC2765F37E00EA7E18 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		A78BCEDE2765F3C000EA7E18 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewModel.swift; path = SeparateCollectionAlphaGo/Source/Service/MapViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAPIResponse.swift; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		A80E8F732764937700E457FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A80E8F752764937700E457FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A80E8F802764968D00E457FD /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		A89B443327690F8F001072D7 /* mumu.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = mumu.xcconfig; sourceTree = "<group>"; };
+		A89B44372769244D001072D7 /* SeparateCollectionGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateCollectionGuideViewController.swift; sourceTree = "<group>"; };
 		F01001CCF31CAA7247BC2B05 /* Pods-SeparateCollectionAlphaGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparateCollectionAlphaGo.release.xcconfig"; path = "Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +108,7 @@
 				A80E8F7B2764962400E457FD /* Resource */,
 				A80E8F7E2764966200E457FD /* Source */,
 				A80E8F752764937700E457FD /* Info.plist */,
-				A78BCED92765D4D400EA7E18 /* Config.xcconfig */,
+				A89B443327690F8F001072D7 /* mumu.xcconfig */,
 			);
 			path = SeparateCollectionAlphaGo;
 			sourceTree = "<group>";
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				A80E8F852764978D00E457FD /* Home */,
+				A89B44342769230C001072D7 /* SeparateCollectionGuide */,
 				A80E8F86276497A300E457FD /* WasteMap */,
 				A80E8F7F2764967300E457FD /* Tab */,
 			);
@@ -184,7 +187,7 @@
 		A80E8F852764978D00E457FD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A78BCEC727649B6D00EA7E18 /* HomeView.swift */,
+				A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -196,6 +199,30 @@
 				A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */,
 			);
 			path = WasteMap;
+			sourceTree = "<group>";
+		};
+		A89B44342769230C001072D7 /* SeparateCollectionGuide */ = {
+			isa = PBXGroup;
+			children = (
+				A89B44352769241F001072D7 /* Controller */,
+				A89B44362769242C001072D7 /* Views */,
+			);
+			path = SeparateCollectionGuide;
+			sourceTree = "<group>";
+		};
+		A89B44352769241F001072D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A89B44372769244D001072D7 /* SeparateCollectionGuideViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A89B44362769242C001072D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FF92362697074FB671C59AD3 /* Pods */ = {
@@ -323,10 +350,11 @@
 			files = (
 				A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */,
 				A80E8F812764968D00E457FD /* TabbarViewController.swift in Sources */,
-				A78BCEC827649B6D00EA7E18 /* HomeView.swift in Sources */,
+				A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */,
 				A7E2C9EB2768A02600FCF54A /* TrashService.swift in Sources */,
 				A80E8F682764937600E457FD /* AppDelegate.swift in Sources */,
 				A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */,
+				A89B44382769244D001072D7 /* SeparateCollectionGuideViewController.swift in Sources */,
 				A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */,
 				A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */,
 				A80E8F6A2764937600E457FD /* SceneDelegate.swift in Sources */,
@@ -350,7 +378,6 @@
 /* Begin XCBuildConfiguration section */
 		A80E8F762764937700E457FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A78BCED92765D4D400EA7E18 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -412,7 +439,6 @@
 		};
 		A80E8F772764937700E457FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A78BCED92765D4D400EA7E18 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -474,9 +500,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CH57QT784A;
+				DEVELOPMENT_TEAM = 7W64WHVKVN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeparateCollectionAlphaGo/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "네이버 지도에서 현위치를 표시하기 위해 위치정보가 사용됩니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "네이버 지도에서 현위치를 표시하기 위해 위치정보가 사용됩니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -486,7 +514,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo.mumu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -502,9 +530,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CH57QT784A;
+				DEVELOPMENT_TEAM = 7W64WHVKVN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeparateCollectionAlphaGo/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "네이버 지도에서 현위치를 표시하기 위해 위치정보가 사용됩니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "네이버 지도에서 현위치를 표시하기 위해 위치정보가 사용됩니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -514,7 +544,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo.mumu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
