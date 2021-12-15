@@ -14,6 +14,7 @@
 		9F8FBC6D276AB09A0028DC99 /* HowToUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC6C276AB09A0028DC99 /* HowToUseViewController.swift */; };
 		9F8FBC6F276AB0D10028DC99 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC6E276AB0D10028DC99 /* CameraViewController.swift */; };
 		9F8FBC71276AB0EC0028DC99 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC70276AB0EC0028DC99 /* PhotoViewController.swift */; };
+		9F8FBC75276AB5A30028DC99 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC74276AB5A30028DC99 /* ImagePredictor.swift */; };
 		A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */; };
 		A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECB2765C60300EA7E18 /* WasteMapView.swift */; };
 		A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */; };
@@ -41,6 +42,7 @@
 		9F8FBC6C276AB09A0028DC99 /* HowToUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseViewController.swift; sourceTree = "<group>"; };
 		9F8FBC6E276AB0D10028DC99 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		9F8FBC70276AB0EC0028DC99 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		9F8FBC74276AB5A30028DC99 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
 		A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A78BCECB2765C60300EA7E18 /* WasteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteMapView.swift; sourceTree = "<group>"; };
 		A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMap.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 			path = JSONFile;
 			sourceTree = "<group>";
 		};
+		9F8FBC73276AB5810028DC99 /* ImagePredictor */ = {
+			isa = PBXGroup;
+			children = (
+				9F8FBC74276AB5A30028DC99 /* ImagePredictor.swift */,
+			);
+			path = ImagePredictor;
+			sourceTree = "<group>";
+		};
 		A78BCEDB2765F37400EA7E18 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +178,7 @@
 		A80E8F7C2764962F00E457FD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9F8FBC73276AB5810028DC99 /* ImagePredictor */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -405,6 +416,7 @@
 				A89B44382769244D001072D7 /* SeparateCollectionGuideViewController.swift in Sources */,
 				A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */,
 				9F8FBC66276AA3770028DC99 /* LodingViewController.swift in Sources */,
+				9F8FBC75276AB5A30028DC99 /* ImagePredictor.swift in Sources */,
 				9F8FBC6D276AB09A0028DC99 /* HowToUseViewController.swift in Sources */,
 				9F8FBC6F276AB0D10028DC99 /* CameraViewController.swift in Sources */,
 				A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */,
