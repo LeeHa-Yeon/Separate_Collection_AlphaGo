@@ -112,12 +112,29 @@ class PhotoViewController: UIViewController {
 
     }
     
+    func showToast(message : String, font: UIFont) {
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-100, width: 150, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.font = font
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds = true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0 }, completion: {(isCompleted) in
+                toastLabel.removeFromSuperview()
+            }
+        )
+    }
     
     // MARK: - objc Functions
     @objc func xBtnPressed(_ sender: UIButton){
         self.dismiss(animated: true, completion: nil)
     }
-    @objc func analyzeBtnPressed(_ sender: UIButton) {}
+    
     @objc func uploadPhoto() {
         photoImageView.backgroundColor = .clear
         let imagePicker = UIImagePickerController()
@@ -125,7 +142,36 @@ class PhotoViewController: UIViewController {
         imagePicker.delegate = self
         present(imagePicker, animated: true)
     }
-    @objc func removeBgPhoto() {}
+    
+    @objc func removeBgPhoto() {
+        showToast(message: "잠시만 기다려주세요", font: .systemFont(ofSize: 12.0))
+        guard let jpgData = self.photoImageView.image?.jpegData(compressionQuality: 0.8) else { return }
+        
+        AF.upload(
+            multipartFormData: { builder in
+                builder.append(
+                    jpgData,
+                    withName: "image_file",
+                    fileName: "file.jpg",
+                    mimeType: "image/jpeg"
+                )
+            },
+            to: URL(string: "https://api.remove.bg/v1.0/removebg")!,
+            headers: [
+                "X-Api-Key": apiKey
+            ]
+        ).responseJSON { json in
+            if let imageData = json.data {
+                guard let img = UIImage(data: imageData) else {
+                    print("실패")
+                    return
+                }
+                self.photoImageView.image = img
+            }
+        }
+    }
+    
+    @objc func analyzeBtnPressed(_ sender: UIButton) {}
 
 }
 
