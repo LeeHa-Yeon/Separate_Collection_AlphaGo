@@ -114,9 +114,29 @@ class PhotoViewController: UIViewController {
     
     
     // MARK: - objc Functions
-    @objc func xBtnPressed(_ sender: UIButton){}
+    @objc func xBtnPressed(_ sender: UIButton){
+        self.dismiss(animated: true, completion: nil)
+    }
     @objc func analyzeBtnPressed(_ sender: UIButton) {}
-    @objc func uploadPhoto() {}
+    @objc func uploadPhoto() {
+        photoImageView.backgroundColor = .clear
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        present(imagePicker, animated: true)
+    }
     @objc func removeBgPhoto() {}
 
+}
+
+extension PhotoViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            photoImageView.contentMode = .scaleAspectFit
+            photoImageView.image = pickedImage
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) { dismiss(animated: true, completion: nil)
+    }
 }
