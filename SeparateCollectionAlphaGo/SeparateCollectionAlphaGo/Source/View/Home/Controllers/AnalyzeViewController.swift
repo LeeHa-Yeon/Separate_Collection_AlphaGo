@@ -9,7 +9,6 @@ import UIKit
 
 class AnalyzeViewController: UIViewController {
     
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()

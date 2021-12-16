@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.5.0)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - lottie-ios (3.3.0)
   - NMapsMap (3.14.0)
   - SnapKit (5.0.1)
@@ -8,6 +11,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
+  - Charts
   - lottie-ios
   - NMapsMap
   - SnapKit (~> 5.0.0)
@@ -17,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Charts
     - lottie-ios
     - NMapsMap
     - SnapKit
@@ -25,12 +30,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
   NMapsMap: 61c2abfc409bbcdc91583ccc455a5b6f64c7414e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SWXMLHash: 9d851ed3edf48ec2bd0db98f0cda0ad4136d75e3
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 28942e19dc49d8525986749ae0b0d91bf6e91ff2
+PODFILE CHECKSUM: 99dfa429b48fa1190e0de39e93736cea4762d535
 
 COCOAPODS: 1.11.2
