@@ -97,7 +97,64 @@ class AnalyzeViewController: UIViewController {
         
     }
     
-    // MARK: - objc Functions
+    func setChart(dataPoints: [String], values: [Double]) {
+        
+        // 데이터 생성
+        var dataEntries: [BarChartDataEntry] = []
+        for i in 0..<dataPoints.count {
+            let dataEntry = BarChartDataEntry(x: Double(i), y: values[i])
+            dataEntries.append(dataEntry)
+        }
+        
+        let chartDataSet = BarChartDataSet(entries: dataEntries, label: "정확도")
+        
+        // 차트 컬러
+        chartDataSet.colors = [.systemBlue]
+        
+        // 데이터 삽입
+        let chartData = BarChartData(dataSet: chartDataSet)
+        barChartView.data = chartData
+        
+        
+        // 선택 안되게
+        chartDataSet.highlightEnabled = false
+        // 줌 안되게
+        barChartView.doubleTapToZoomEnabled = false
+        
+        
+        // X축 레이블 위치 조정
+        barChartView.xAxis.labelPosition = .bottom
+        // X축 레이블 포맷 지정
+        barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: ImagePredictor.typeArr)
+        
+        
+        // X축 레이블 갯수 최대로 설정 (이 코드 안쓸 시 Jan Mar May 이런식으로 띄엄띄엄 조금만 나옴)
+        barChartView.xAxis.setLabelCount(dataPoints.count, force: false)
+        
+        // 오른쪽 레이블 제거
+        barChartView.rightAxis.enabled = false
+        
+        // 기본 애니메이션
+        barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+        // 옵션 애니메이션
+        //barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .easeInBounce)
+        
+        
+        // 리미트라인
+        let ll = ChartLimitLine(limit: 50.0, label: "Precision")
+        barChartView.leftAxis.addLimitLine(ll)
+        
+        
+        // 맥시멈
+        barChartView.leftAxis.axisMaximum = 100
+        // 미니멈
+        barChartView.leftAxis.axisMinimum = 0
+        
+        
+        // 백그라운드컬러
+        barChartView.backgroundColor = .clear
+        
+    }
     
 }
 
