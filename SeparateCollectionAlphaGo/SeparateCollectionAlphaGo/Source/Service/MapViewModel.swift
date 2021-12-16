@@ -16,7 +16,7 @@ class MapViewModel: ObservableObject {
 
     
     init() {
-        getAddress()
+        trashService.search("강남구")
     }
     
     func getAddress() {

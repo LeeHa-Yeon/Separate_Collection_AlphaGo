@@ -26,17 +26,14 @@ class TrashService {
     }
     
     func search(_ word: String) {
-//        guard let apiKey = apiKey else { throw APIError.missingAPIKey }
         let parameters: [String: Any] = [
-            "SIGUN_NM": word,
+            "Type": "json",
+            "SIGUNGU_NM": word,
         ]
         let pullPath = self.endPoint + "?\(apiKey!)"
-        print(pullPath)
-        AF.request(pullPath, parameters: parameters).response { response in
-            print(response.data)
-            let xml = XMLHash.parse(response.data!)
-            print(xml)
-            print(xml["Livelhwstemisninfo"]["row"]["EMISN_PLC"].element?.text)   
+        AF.request(pullPath, parameters: parameters).validate().publishDecodable(type: OpenApiResponse.self).result().sink {
+            print($0)
         }
+        .store(in: &self.storage)
     }
 }
