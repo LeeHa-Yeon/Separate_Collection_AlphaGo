@@ -165,7 +165,7 @@ class HowToUseViewController: UIViewController {
     
     @objc func moveToRegisterVC(){
         let transition = CATransition()
-        transition.duration = 1.0
+        transition.duration = 0.4
         transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         transition.type = CATransitionType.push
         transition.subtype = CATransitionSubtype.fromRight

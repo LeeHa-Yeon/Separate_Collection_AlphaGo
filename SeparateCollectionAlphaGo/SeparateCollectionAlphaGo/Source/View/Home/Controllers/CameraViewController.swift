@@ -55,7 +55,7 @@ class CameraViewController: UIViewController {
     }
     //    private var blurBGView: UIVisualEffectView!
     private lazy var switchButton = UIButton().then {
-        let image = #imageLiteral(resourceName: "front")
+        let image = #imageLiteral(resourceName: "back")
         $0.setImage(image, for: .normal)
         $0.layer.cornerRadius = $0.bounds.height / 2
         $0.layer.masksToBounds = true

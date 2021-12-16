@@ -130,6 +130,15 @@ class PhotoViewController: UIViewController {
         )
     }
     
+    func failAlert(){
+        let alert = UIAlertController(title: "실패", message: "사용 횟수 초과 ( 50회 한정 )", preferredStyle: UIAlertController.Style.alert)
+                 
+        let okAction = UIAlertAction(title: "확인", style: .default) { (action) in }
+        alert.addAction(okAction)
+                 
+        present(alert, animated: false, completion: nil)
+    }
+    
     // MARK: - objc Functions
     @objc func xBtnPressed(_ sender: UIButton){
         self.dismiss(animated: true, completion: nil)
@@ -163,7 +172,8 @@ class PhotoViewController: UIViewController {
         ).responseJSON { json in
             if let imageData = json.data {
                 guard let img = UIImage(data: imageData) else {
-                    print("실패")
+                    print("실패 - 한달 사용 횟수 초과 ( 50회 한정 ) ")
+                    self.failAlert()
                     return
                 }
                 self.photoImageView.image = img
@@ -173,6 +183,7 @@ class PhotoViewController: UIViewController {
     
     @objc func analyzeBtnPressed(_ sender: UIButton) {
         let analyzeVC = AnalyzeViewController()
+        analyzeVC.userSelectedPhoto(photoImageView.image!)
         self.present(analyzeVC,animated: true,completion: nil)
     }
 
