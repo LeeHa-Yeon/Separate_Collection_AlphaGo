@@ -121,6 +121,38 @@ class CameraViewController: UIViewController {
         }
     }
     
+    func savePhotoLibrary(image: UIImage) {
+        // TODO: capture한 이미지 포토라이브러리에 저장
+        PHPhotoLibrary.requestAuthorization { status in
+            if status == .authorized {
+                // 허락된 상태 -> 저장
+                PHPhotoLibrary.shared().performChanges({
+                    PHAssetChangeRequest.creationRequestForAsset(from: image)
+                }, completionHandler: { (sucesss, error) in
+                    print("--> 이미지 저장 완료 : \(sucesss)")
+                    DispatchQueue.main.async {
+                        self.photoLibraryButton.setImage(image, for: .normal)
+                    }
+                })
+            } else {
+                // 허락되지 않을 경우 -> 다시 요청 , 혹은 거절일 때는 어쩔수없지
+                print(" error to save photo library")
+            }
+        }
+    }
+    
+    
+    
+    func captureAlert(){
+        let alert = UIAlertController(title: "저장 완료", message: "사진첩을 통해 사진을 확인해주세요", preferredStyle: UIAlertController.Style.alert)
+                 
+        // Create the Actions //버튼 리스너
+        let okAction = UIAlertAction(title: "확인", style: .default) { (action) in }
+        alert.addAction(okAction)
+                 
+        present(alert, animated: false, completion: nil)
+    }
+    
     // MARK: - objc Functions
     
     @objc func xBtnPressed(_ sender: UIButton){
@@ -131,6 +163,16 @@ class CameraViewController: UIViewController {
     }
     
     @objc func capturePhoto(_ sender: UIButton){
+        // photoOutput의 capturePhoto 메소드
+        let videoPreviewLayerOrientation = self.previewView.videoPreviewLayer.connection?.videoOrientation
+        sessionQueue.async {
+            let connection = self.photoOutput.connection(with: .video)
+            connection?.videoOrientation = videoPreviewLayerOrientation!
+            
+            let setting = AVCapturePhotoSettings()
+            self.photoOutput.capturePhoto(with: setting, delegate: self)
+        }
+        captureAlert()
     }
  
 }
@@ -211,6 +253,9 @@ extension CameraViewController {
 extension CameraViewController: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         // capturePhoto delegate method 구현
-        print("추후 수정")
+        guard error == nil else { return }
+        guard let imageData = photo.fileDataRepresentation() else { return }
+        guard let image = UIImage(data: imageData) else { return }
+        self.savePhotoLibrary(image: image)
     }
 }
