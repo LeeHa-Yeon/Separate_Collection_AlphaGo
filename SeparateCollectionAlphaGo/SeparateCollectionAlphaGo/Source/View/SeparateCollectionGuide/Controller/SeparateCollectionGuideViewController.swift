@@ -50,6 +50,7 @@ class SeparateCollectionGuideViewController: UIViewController {
     @objc func separationOfRecyclablesPressed(_ sender: UIButton){
         //TODO: 화면 이동 - 이미지로 보기
         let imageDetailVC = ImageGuideDetailViewController()
+        imageDetailVC.delegate = self.viewModel
         
         self.navigationController?.pushViewController(imageDetailVC, animated: true)
     }
@@ -57,6 +58,7 @@ class SeparateCollectionGuideViewController: UIViewController {
     @objc func separationOfRecyclablesForTextPressed(_ sender: UIButton){
         //TODO: 화면 이동 - 텍스트로 보기
         let textDetailVC = TextGuideDetailViewController()
+        textDetailVC.delegate = self.viewModel
         
         self.navigationController?.pushViewController(textDetailVC, animated: true)
     }
