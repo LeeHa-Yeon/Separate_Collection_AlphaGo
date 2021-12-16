@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F8FBC63276AA2BE0028DC99 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC62276AA2BE0028DC99 /* PreviewView.swift */; };
+		9F8FBC66276AA3770028DC99 /* LodingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC65276AA3770028DC99 /* LodingViewController.swift */; };
+		9F8FBC6A276AA4560028DC99 /* trash1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC68276AA4560028DC99 /* trash1.json */; };
+		9F8FBC6B276AA4560028DC99 /* trash2.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC69276AA4560028DC99 /* trash2.json */; };
+		9F8FBC6D276AB09A0028DC99 /* HowToUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC6C276AB09A0028DC99 /* HowToUseViewController.swift */; };
+		9F8FBC6F276AB0D10028DC99 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC6E276AB0D10028DC99 /* CameraViewController.swift */; };
+		9F8FBC71276AB0EC0028DC99 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC70276AB0EC0028DC99 /* PhotoViewController.swift */; };
+		9F8FBC75276AB5A30028DC99 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC74276AB5A30028DC99 /* ImagePredictor.swift */; };
+		9F8FBC78276AB6040028DC99 /* VNClassificationObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC77276AB6040028DC99 /* VNClassificationObservation.swift */; };
+		9F8FBC7A276AB6170028DC99 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC79276AB6170028DC99 /* CGImagePropertyOrientation.swift */; };
+		9F8FBC7C276AB6810028DC99 /* RecycleClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC7B276AB6810028DC99 /* RecycleClassifier.mlmodel */; };
+		9F8FBC7F276AB6A40028DC99 /* NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC7D276AB6A40028DC99 /* NOTICE.txt */; };
+		9F8FBC80276AB6A40028DC99 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC7E276AB6A40028DC99 /* LICENSE.txt */; };
+		9F8FBC82276AC3E60028DC99 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC81276AC3E60028DC99 /* AnalyzeViewController.swift */; };
 		A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */; };
 		A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECB2765C60300EA7E18 /* WasteMapView.swift */; };
 		A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */; };
@@ -14,7 +28,6 @@
 		A78BCEDF2765F3C000EA7E18 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEDE2765F3C000EA7E18 /* MapViewModel.swift */; };
 		A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */; };
 		A7E2C9EB2768A02600FCF54A /* TrashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C9EA2768A02600FCF54A /* TrashService.swift */; };
-		A7E2CA092769E6CB00FCF54A /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A7E2CA082769E6CB00FCF54A /* Config.xcconfig */; };
 		A80E8F682764937600E457FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F672764937600E457FD /* AppDelegate.swift */; };
 		A80E8F6A2764937600E457FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F692764937600E457FD /* SceneDelegate.swift */; };
 		A80E8F712764937700E457FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F702764937700E457FD /* Assets.xcassets */; };
@@ -27,6 +40,21 @@
 /* Begin PBXFileReference section */
 		30DB2E3546E8121EC82092E1 /* Pods_SeparateCollectionAlphaGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeparateCollectionAlphaGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FA930164D6E826069C55DE /* Pods-SeparateCollectionAlphaGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparateCollectionAlphaGo.debug.xcconfig"; path = "Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo.debug.xcconfig"; sourceTree = "<group>"; };
+		9F8FBC60276A97820028DC99 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		9F8FBC62276AA2BE0028DC99 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		9F8FBC65276AA3770028DC99 /* LodingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LodingViewController.swift; sourceTree = "<group>"; };
+		9F8FBC68276AA4560028DC99 /* trash1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trash1.json; sourceTree = "<group>"; };
+		9F8FBC69276AA4560028DC99 /* trash2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trash2.json; sourceTree = "<group>"; };
+		9F8FBC6C276AB09A0028DC99 /* HowToUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseViewController.swift; sourceTree = "<group>"; };
+		9F8FBC6E276AB0D10028DC99 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		9F8FBC70276AB0EC0028DC99 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		9F8FBC74276AB5A30028DC99 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		9F8FBC77276AB6040028DC99 /* VNClassificationObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNClassificationObservation.swift; sourceTree = "<group>"; };
+		9F8FBC79276AB6170028DC99 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		9F8FBC7B276AB6810028DC99 /* RecycleClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RecycleClassifier.mlmodel; sourceTree = "<group>"; };
+		9F8FBC7D276AB6A40028DC99 /* NOTICE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
+		9F8FBC7E276AB6A40028DC99 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		9F8FBC81276AC3E60028DC99 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
 		A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A78BCECB2765C60300EA7E18 /* WasteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteMapView.swift; sourceTree = "<group>"; };
 		A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMap.swift; sourceTree = "<group>"; };
@@ -34,7 +62,6 @@
 		A78BCEDE2765F3C000EA7E18 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewModel.swift; path = SeparateCollectionAlphaGo/Source/Service/MapViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAPIResponse.swift; sourceTree = "<group>"; };
 		A7E2C9EA2768A02600FCF54A /* TrashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashService.swift; sourceTree = "<group>"; };
-		A7E2CA082769E6CB00FCF54A /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../Config.xcconfig; sourceTree = "<group>"; };
 		A80E8F642764937600E457FD /* SeparateCollectionAlphaGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeparateCollectionAlphaGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80E8F672764937600E457FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A80E8F692764937600E457FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +91,52 @@
 				30DB2E3546E8121EC82092E1 /* Pods_SeparateCollectionAlphaGo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F8FBC61276AA1820028DC99 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */,
+				9F8FBC6C276AB09A0028DC99 /* HowToUseViewController.swift */,
+				9F8FBC6E276AB0D10028DC99 /* CameraViewController.swift */,
+				9F8FBC70276AB0EC0028DC99 /* PhotoViewController.swift */,
+				9F8FBC81276AC3E60028DC99 /* AnalyzeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9F8FBC64276AA35C0028DC99 /* Loding */ = {
+			isa = PBXGroup;
+			children = (
+				9F8FBC65276AA3770028DC99 /* LodingViewController.swift */,
+			);
+			path = Loding;
+			sourceTree = "<group>";
+		};
+		9F8FBC67276AA42D0028DC99 /* JSONFile */ = {
+			isa = PBXGroup;
+			children = (
+				9F8FBC68276AA4560028DC99 /* trash1.json */,
+				9F8FBC69276AA4560028DC99 /* trash2.json */,
+			);
+			path = JSONFile;
+			sourceTree = "<group>";
+		};
+		9F8FBC73276AB5810028DC99 /* ImagePredictor */ = {
+			isa = PBXGroup;
+			children = (
+				9F8FBC74276AB5A30028DC99 /* ImagePredictor.swift */,
+			);
+			path = ImagePredictor;
+			sourceTree = "<group>";
+		};
+		9F8FBC76276AB5E70028DC99 /* ML + Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F8FBC77276AB6040028DC99 /* VNClassificationObservation.swift */,
+				9F8FBC79276AB6170028DC99 /* CGImagePropertyOrientation.swift */,
+			);
+			path = "ML + Extensions";
 			sourceTree = "<group>";
 		};
 		A78BCEDB2765F37400EA7E18 /* Service */ = {
@@ -109,7 +182,7 @@
 				A80E8F7B2764962400E457FD /* Resource */,
 				A80E8F7E2764966200E457FD /* Source */,
 				A80E8F752764937700E457FD /* Info.plist */,
-				A7E2CA082769E6CB00FCF54A /* Config.xcconfig */,
+				9F8FBC60276A97820028DC99 /* Config.xcconfig */,
 			);
 			path = SeparateCollectionAlphaGo;
 			sourceTree = "<group>";
@@ -117,6 +190,7 @@
 		A80E8F7B2764962400E457FD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9F8FBC67276AA42D0028DC99 /* JSONFile */,
 				A80E8F7C2764962F00E457FD /* Extension */,
 				A80E8F702764937700E457FD /* Assets.xcassets */,
 			);
@@ -126,6 +200,8 @@
 		A80E8F7C2764962F00E457FD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9F8FBC76276AB5E70028DC99 /* ML + Extensions */,
+				9F8FBC73276AB5810028DC99 /* ImagePredictor */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -162,6 +238,7 @@
 		A80E8F822764977000E457FD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9F8FBC64276AA35C0028DC99 /* Loding */,
 				A80E8F852764978D00E457FD /* Home */,
 				A89B44342769230C001072D7 /* SeparateCollectionGuide */,
 				A80E8F86276497A300E457FD /* WasteMap */,
@@ -181,6 +258,9 @@
 		A80E8F842764978000E457FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9F8FBC7B276AB6810028DC99 /* RecycleClassifier.mlmodel */,
+				9F8FBC7E276AB6A40028DC99 /* LICENSE.txt */,
+				9F8FBC7D276AB6A40028DC99 /* NOTICE.txt */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,7 +268,8 @@
 		A80E8F852764978D00E457FD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */,
+				9F8FBC62276AA2BE0028DC99 /* PreviewView.swift */,
+				9F8FBC61276AA1820028DC99 /* Controllers */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -295,9 +376,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8FBC80276AB6A40028DC99 /* LICENSE.txt in Resources */,
+				9F8FBC7F276AB6A40028DC99 /* NOTICE.txt in Resources */,
+				9F8FBC6A276AA4560028DC99 /* trash1.json in Resources */,
 				A80E8F742764937700E457FD /* LaunchScreen.storyboard in Resources */,
-				A7E2CA092769E6CB00FCF54A /* Config.xcconfig in Resources */,
 				A80E8F712764937700E457FD /* Assets.xcassets in Resources */,
+				9F8FBC6B276AA4560028DC99 /* trash2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,15 +435,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */,
+				9F8FBC7A276AB6170028DC99 /* CGImagePropertyOrientation.swift in Sources */,
 				A80E8F812764968D00E457FD /* TabbarViewController.swift in Sources */,
 				A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */,
 				A7E2C9EB2768A02600FCF54A /* TrashService.swift in Sources */,
 				A80E8F682764937600E457FD /* AppDelegate.swift in Sources */,
+				9F8FBC7C276AB6810028DC99 /* RecycleClassifier.mlmodel in Sources */,
+				9F8FBC63276AA2BE0028DC99 /* PreviewView.swift in Sources */,
 				A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */,
 				A89B44382769244D001072D7 /* SeparateCollectionGuideViewController.swift in Sources */,
 				A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */,
+				9F8FBC66276AA3770028DC99 /* LodingViewController.swift in Sources */,
+				9F8FBC75276AB5A30028DC99 /* ImagePredictor.swift in Sources */,
+				9F8FBC6D276AB09A0028DC99 /* HowToUseViewController.swift in Sources */,
+				9F8FBC82276AC3E60028DC99 /* AnalyzeViewController.swift in Sources */,
+				9F8FBC6F276AB0D10028DC99 /* CameraViewController.swift in Sources */,
 				A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */,
+				9F8FBC71276AB0EC0028DC99 /* PhotoViewController.swift in Sources */,
 				A80E8F6A2764937600E457FD /* SceneDelegate.swift in Sources */,
+				9F8FBC78276AB6040028DC99 /* VNClassificationObservation.swift in Sources */,
 				A78BCEDF2765F3C000EA7E18 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,7 +474,6 @@
 /* Begin XCBuildConfiguration section */
 		A80E8F762764937700E457FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7E2CA082769E6CB00FCF54A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -442,7 +535,6 @@
 		};
 		A80E8F772764937700E457FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7E2CA082769E6CB00FCF54A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -504,7 +596,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CH57QT784A;
+				DEVELOPMENT_TEAM = 8K8VT9C65D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeparateCollectionAlphaGo/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "네이버 지도에서 현위치를 표시하기 위해 위치정보가 사용됩니다.";
@@ -518,7 +610,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo.hayeon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -534,7 +626,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CH57QT784A;
+				DEVELOPMENT_TEAM = 8K8VT9C65D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeparateCollectionAlphaGo/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "네이버 지도에서 현위치를 표시하기 위해 위치정보가 사용됩니다.";
@@ -548,7 +640,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo.hayeon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
