@@ -171,7 +171,10 @@ class PhotoViewController: UIViewController {
         }
     }
     
-    @objc func analyzeBtnPressed(_ sender: UIButton) {}
+    @objc func analyzeBtnPressed(_ sender: UIButton) {
+        let analyzeVC = AnalyzeViewController()
+        self.present(analyzeVC,animated: true,completion: nil)
+    }
 
 }
 

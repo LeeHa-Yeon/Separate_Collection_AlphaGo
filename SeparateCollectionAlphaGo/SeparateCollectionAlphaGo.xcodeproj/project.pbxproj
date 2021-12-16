@@ -20,6 +20,7 @@
 		9F8FBC7C276AB6810028DC99 /* RecycleClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC7B276AB6810028DC99 /* RecycleClassifier.mlmodel */; };
 		9F8FBC7F276AB6A40028DC99 /* NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC7D276AB6A40028DC99 /* NOTICE.txt */; };
 		9F8FBC80276AB6A40028DC99 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBC7E276AB6A40028DC99 /* LICENSE.txt */; };
+		9F8FBC82276AC3E60028DC99 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC81276AC3E60028DC99 /* AnalyzeViewController.swift */; };
 		A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */; };
 		A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECB2765C60300EA7E18 /* WasteMapView.swift */; };
 		A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */; };
@@ -53,6 +54,7 @@
 		9F8FBC7B276AB6810028DC99 /* RecycleClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RecycleClassifier.mlmodel; sourceTree = "<group>"; };
 		9F8FBC7D276AB6A40028DC99 /* NOTICE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
 		9F8FBC7E276AB6A40028DC99 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		9F8FBC81276AC3E60028DC99 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
 		A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A78BCECB2765C60300EA7E18 /* WasteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteMapView.swift; sourceTree = "<group>"; };
 		A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMap.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				9F8FBC6C276AB09A0028DC99 /* HowToUseViewController.swift */,
 				9F8FBC6E276AB0D10028DC99 /* CameraViewController.swift */,
 				9F8FBC70276AB0EC0028DC99 /* PhotoViewController.swift */,
+				9F8FBC81276AC3E60028DC99 /* AnalyzeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				9F8FBC66276AA3770028DC99 /* LodingViewController.swift in Sources */,
 				9F8FBC75276AB5A30028DC99 /* ImagePredictor.swift in Sources */,
 				9F8FBC6D276AB09A0028DC99 /* HowToUseViewController.swift in Sources */,
+				9F8FBC82276AC3E60028DC99 /* AnalyzeViewController.swift in Sources */,
 				9F8FBC6F276AB0D10028DC99 /* CameraViewController.swift in Sources */,
 				A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */,
 				9F8FBC71276AB0EC0028DC99 /* PhotoViewController.swift in Sources */,
