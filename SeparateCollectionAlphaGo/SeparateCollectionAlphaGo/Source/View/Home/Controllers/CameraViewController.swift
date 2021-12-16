@@ -67,6 +67,7 @@ class CameraViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        setInit()
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -112,9 +113,18 @@ class CameraViewController: UIViewController {
         }
     }
     
+    func setInit(){
+        previewView.session = captureSession
+        sessionQueue.async {
+            self.setupSession()
+            self.startSession()
+        }
+    }
+    
     // MARK: - objc Functions
     
     @objc func xBtnPressed(_ sender: UIButton){
+        self.dismiss(animated: true, completion: nil)
     }
     
     @objc func switchCamera(_ sender: UIButton){
@@ -123,4 +133,84 @@ class CameraViewController: UIViewController {
     @objc func capturePhoto(_ sender: UIButton){
     }
  
+}
+
+extension CameraViewController {
+    func setupSession(){
+        captureSession.sessionPreset = .photo
+        captureSession.beginConfiguration()
+        // 구성하는 코드 부분
+        
+        // Add Video Input
+        do {
+            var defaultVideoDevice: AVCaptureDevice?
+            if let dualCameraDevice = AVCaptureDevice.default(.builtInDualCamera, for: .video, position: .back) {
+                defaultVideoDevice = dualCameraDevice
+            } else if let backCameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) {
+                defaultVideoDevice = backCameraDevice
+            } else if let frontCameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) {
+                defaultVideoDevice = frontCameraDevice
+            }
+            
+            guard let camera = defaultVideoDevice else {
+                captureSession.commitConfiguration()
+                return
+            }
+            
+            let videoDeviceInput = try AVCaptureDeviceInput(device: camera)
+            
+            // 넣기 전에 DeviceInput을 session에 넣을 수 있는지 물어봐야한다.
+            if captureSession.canAddInput(videoDeviceInput) {
+                // 넣을 수 있다면 그제서야 addInput을 진행
+                captureSession.addInput(videoDeviceInput)
+                self.videoDeviceInput = videoDeviceInput
+            } else {
+                captureSession.commitConfiguration()
+                return
+            }
+        } catch {
+            captureSession.commitConfiguration()
+            return
+        }
+        
+        
+        // - ADD photo Output : 사진을 찍어서 저장할테니까
+        photoOutput.setPreparedPhotoSettingsArray([AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])], completionHandler: nil)
+        if captureSession.canAddOutput(photoOutput) {
+            captureSession.addOutput(photoOutput)
+        } else {
+            captureSession.commitConfiguration()
+            return
+        }
+        
+        captureSession.commitConfiguration()
+    }
+    
+    func startSession(){
+        
+        // captureSession이 실행중이 아닐 때 실행시키라고 하기
+        if !captureSession.isRunning {
+            sessionQueue.async {
+                self.captureSession.startRunning()
+            }
+        }
+        
+    }
+    
+    func stopSession(){
+        // captureSession이 멈춰있지 않을 때 ( 즉, 실행중일 때 ) 멈추게 하기
+        if captureSession.isRunning {
+            sessionQueue.async {
+                self.captureSession.stopRunning()
+            }
+        }
+    }
+}
+
+
+extension CameraViewController: AVCapturePhotoCaptureDelegate {
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+        // capturePhoto delegate method 구현
+        print("추후 수정")
+    }
 }
