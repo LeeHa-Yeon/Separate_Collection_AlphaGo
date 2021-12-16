@@ -13,7 +13,7 @@ import Alamofire
 class PhotoViewController: UIViewController {
     
     // TODO: - 나중에 info.plist에 넣기
-    private let apiKey: String = "cPs6pJefrpTBaBSaw8K2rL3a"
+    private let apiKey: String = "BTypKBKYj18bq1QphqJrAqbn"
     
     // MARK: - Components
     private lazy var imageViewFrame = UIView().then {
