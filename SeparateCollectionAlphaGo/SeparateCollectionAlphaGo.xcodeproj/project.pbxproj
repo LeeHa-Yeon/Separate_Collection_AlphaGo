@@ -45,6 +45,8 @@
 		A8D1B46D276B2FCE003B0BD8 /* ImageGuideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B46C276B2FCE003B0BD8 /* ImageGuideDetailViewController.swift */; };
 		A8D1B46F276B2FE7003B0BD8 /* TextGuideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B46E276B2FE7003B0BD8 /* TextGuideDetailViewController.swift */; };
 		A8D1B471276B3B7C003B0BD8 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B470276B3B7C003B0BD8 /* UIImageExtension.swift */; };
+		A8D1B474276B3E23003B0BD8 /* SeparateCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B473276B3E23003B0BD8 /* SeparateCollectionCell.swift */; };
+		A8D1B476276B440C003B0BD8 /* TextGuideDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B475276B440C003B0BD8 /* TextGuideDetailViewModel.swift */; };
 		CDCCE11B360F65381FD3B008 /* Pods_SeparateCollectionAlphaGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DB2E3546E8121EC82092E1 /* Pods_SeparateCollectionAlphaGo.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,8 @@
 		A8D1B46C276B2FCE003B0BD8 /* ImageGuideDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGuideDetailViewController.swift; sourceTree = "<group>"; };
 		A8D1B46E276B2FE7003B0BD8 /* TextGuideDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGuideDetailViewController.swift; sourceTree = "<group>"; };
 		A8D1B470276B3B7C003B0BD8 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		A8D1B473276B3E23003B0BD8 /* SeparateCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateCollectionCell.swift; sourceTree = "<group>"; };
+		A8D1B475276B440C003B0BD8 /* TextGuideDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGuideDetailViewModel.swift; sourceTree = "<group>"; };
 		F01001CCF31CAA7247BC2B05 /* Pods-SeparateCollectionAlphaGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparateCollectionAlphaGo.release.xcconfig"; path = "Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -317,6 +321,7 @@
 			children = (
 				A89B44352769241F001072D7 /* Controller */,
 				A89B44362769242C001072D7 /* Views */,
+				A8D1B472276B3DF5003B0BD8 /* Cells */,
 			);
 			path = SeparateCollectionGuide;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				A8D1B45B276ADD2E003B0BD8 /* SeparateCollectionGuideViewModel.swift */,
+				A8D1B475276B440C003B0BD8 /* TextGuideDetailViewModel.swift */,
 				A8D1B466276ADE4C003B0BD8 /* Observable.swift */,
 			);
 			path = SeparateCollectionGuide;
@@ -354,6 +360,14 @@
 				A8D1B460276ADD9E003B0BD8 /* TypeOfRecyclable.swift */,
 			);
 			path = SeparateCollectionGuide;
+			sourceTree = "<group>";
+		};
+		A8D1B472276B3DF5003B0BD8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1B473276B3E23003B0BD8 /* SeparateCollectionCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FF92362697074FB671C59AD3 /* Pods */ = {
@@ -493,6 +507,7 @@
 				9F8FBC7C276AB6810028DC99 /* RecycleClassifier.mlmodel in Sources */,
 				9F8FBC63276AA2BE0028DC99 /* PreviewView.swift in Sources */,
 				A8D1B46D276B2FCE003B0BD8 /* ImageGuideDetailViewController.swift in Sources */,
+				A8D1B474276B3E23003B0BD8 /* SeparateCollectionCell.swift in Sources */,
 				A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */,
 				A8D1B45F276ADD8B003B0BD8 /* SeparateDischargeTip.swift in Sources */,
 				A89B44382769244D001072D7 /* SeparateCollectionGuideViewController.swift in Sources */,
@@ -501,6 +516,7 @@
 				A8D1B471276B3B7C003B0BD8 /* UIImageExtension.swift in Sources */,
 				A8D1B467276ADE4C003B0BD8 /* Observable.swift in Sources */,
 				9F8FBC66276AA3770028DC99 /* LodingViewController.swift in Sources */,
+				A8D1B476276B440C003B0BD8 /* TextGuideDetailViewModel.swift in Sources */,
 				A8D1B469276B2B61003B0BD8 /* UIColorExtension.swift in Sources */,
 				9F8FBC75276AB5A30028DC99 /* ImagePredictor.swift in Sources */,
 				A8D1B46B276B2D22003B0BD8 /* UIFontExtension.swift in Sources */,
