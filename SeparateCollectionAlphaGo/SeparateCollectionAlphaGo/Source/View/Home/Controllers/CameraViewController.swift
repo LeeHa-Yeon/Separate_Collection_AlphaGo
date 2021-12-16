@@ -141,7 +141,18 @@ class CameraViewController: UIViewController {
         }
     }
     
-    
+    func updateSwitchCameraIcon(position: AVCaptureDevice.Position) {
+        switch position {
+        case .front :
+            let image = #imageLiteral(resourceName: "front")
+            switchButton.setImage(image, for: .normal)
+        case .back :
+            let image = #imageLiteral(resourceName: "back")
+            switchButton.setImage(image, for: .normal)
+        default :
+            break
+        }
+    }
     
     func captureAlert(){
         let alert = UIAlertController(title: "저장 완료", message: "사진첩을 통해 사진을 확인해주세요", preferredStyle: UIAlertController.Style.alert)
@@ -160,6 +171,51 @@ class CameraViewController: UIViewController {
     }
     
     @objc func switchCamera(_ sender: UIButton){
+        // 카메라 1개 이상인지 확인
+        guard videoDeviceDiscoverySession.devices.count > 1 else {
+            return
+        }
+        
+        // 반대 카메라 찾아서 재설정
+        sessionQueue.async {
+            // 반대 카메라 찾기
+            let currentVideoDevice = self.videoDeviceInput.device
+            let currentPosition = currentVideoDevice.position
+            let isFront = currentPosition == .front
+            let preferredPosition: AVCaptureDevice.Position = isFront ? .back : .front
+            
+            let devices = self.videoDeviceDiscoverySession.devices
+            var newVideoDevice: AVCaptureDevice?
+            
+            newVideoDevice = devices.first(where: { device in
+                return preferredPosition == device.position
+            })
+            
+            // session 업데이트
+            if let newDevice = newVideoDevice {
+                do {
+                    let videoDeviceInput = try AVCaptureDeviceInput(device: newDevice)
+                    self.captureSession.beginConfiguration()
+                    self.captureSession.removeInput(self.videoDeviceInput)
+                    if self.captureSession.canAddInput(videoDeviceInput) {
+                        self.captureSession.addInput(videoDeviceInput)
+                        self.videoDeviceInput = videoDeviceInput
+                    }else {
+                        self.captureSession.addInput(self.videoDeviceInput)
+                    }
+                    self.captureSession.commitConfiguration()
+                    
+                    // captureSession update하는 부분을 sessionQueue에서 진행
+                    // 하지만, 아이콘 업데이트 부분은 mainQueue에서 진행해야됨 -> UI 관련 부분이기때문
+                    DispatchQueue.main.async {
+                        self.updateSwitchCameraIcon(position: preferredPosition)
+                    }
+                    
+                }catch let error{
+                    print("error occured while creating device input : \(error.localizedDescription)")
+                }
+            }
+        }
     }
     
     @objc func capturePhoto(_ sender: UIButton){
