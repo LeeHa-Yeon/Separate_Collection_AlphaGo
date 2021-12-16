@@ -10,5 +10,6 @@ pod 'SnapKit', '~> 5.0.0'
 pod 'Then'
 pod 'Alamofire', '~> 5.4'
 pod 'NMapsMap'
-
+pod 'SwiftSoup'
+pod 'Kingfisher', '~> 7.0'
 end

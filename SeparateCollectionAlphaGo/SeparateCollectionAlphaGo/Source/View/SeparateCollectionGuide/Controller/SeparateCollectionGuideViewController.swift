@@ -22,6 +22,12 @@ class SeparateCollectionGuideViewController: UIViewController {
         setUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+      
+    }
+    
     //MARK: - Functions
     func setUI(){
         
