@@ -34,6 +34,12 @@
 		A80E8F742764937700E457FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F722764937700E457FD /* LaunchScreen.storyboard */; };
 		A80E8F812764968D00E457FD /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F802764968D00E457FD /* TabbarViewController.swift */; };
 		A89B44382769244D001072D7 /* SeparateCollectionGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B44372769244D001072D7 /* SeparateCollectionGuideViewController.swift */; };
+		A8D1B45C276ADD2E003B0BD8 /* SeparateCollectionGuideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B45B276ADD2E003B0BD8 /* SeparateCollectionGuideViewModel.swift */; };
+		A8D1B45F276ADD8B003B0BD8 /* SeparateDischargeTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B45E276ADD8B003B0BD8 /* SeparateDischargeTip.swift */; };
+		A8D1B461276ADD9E003B0BD8 /* TypeOfRecyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B460276ADD9E003B0BD8 /* TypeOfRecyclable.swift */; };
+		A8D1B463276ADDB7003B0BD8 /* RecyclingGuidelineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B462276ADDB7003B0BD8 /* RecyclingGuidelineService.swift */; };
+		A8D1B465276ADDC9003B0BD8 /* SeparateDischargeTextResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B464276ADDC9003B0BD8 /* SeparateDischargeTextResponse.swift */; };
+		A8D1B467276ADE4C003B0BD8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B466276ADE4C003B0BD8 /* Observable.swift */; };
 		CDCCE11B360F65381FD3B008 /* Pods_SeparateCollectionAlphaGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DB2E3546E8121EC82092E1 /* Pods_SeparateCollectionAlphaGo.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +76,12 @@
 		A80E8F752764937700E457FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A80E8F802764968D00E457FD /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		A89B44372769244D001072D7 /* SeparateCollectionGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateCollectionGuideViewController.swift; sourceTree = "<group>"; };
+		A8D1B45B276ADD2E003B0BD8 /* SeparateCollectionGuideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateCollectionGuideViewModel.swift; sourceTree = "<group>"; };
+		A8D1B45E276ADD8B003B0BD8 /* SeparateDischargeTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateDischargeTip.swift; sourceTree = "<group>"; };
+		A8D1B460276ADD9E003B0BD8 /* TypeOfRecyclable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfRecyclable.swift; sourceTree = "<group>"; };
+		A8D1B462276ADDB7003B0BD8 /* RecyclingGuidelineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclingGuidelineService.swift; sourceTree = "<group>"; };
+		A8D1B464276ADDC9003B0BD8 /* SeparateDischargeTextResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateDischargeTextResponse.swift; sourceTree = "<group>"; };
+		A8D1B466276ADE4C003B0BD8 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		F01001CCF31CAA7247BC2B05 /* Pods-SeparateCollectionAlphaGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparateCollectionAlphaGo.release.xcconfig"; path = "Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +157,7 @@
 				A7E2C9E727689C6400FCF54A /* Entities */,
 				A78BCEDC2765F37E00EA7E18 /* LocationService.swift */,
 				A7E2C9EA2768A02600FCF54A /* TrashService.swift */,
+				A8D1B462276ADDB7003B0BD8 /* RecyclingGuidelineService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -153,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */,
+				A8D1B464276ADDC9003B0BD8 /* SeparateDischargeTextResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -250,6 +264,7 @@
 		A80E8F832764977900E457FD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A8D1B45A276ADCED003B0BD8 /* SeparateCollectionGuide */,
 				A78BCEDE2765F3C000EA7E18 /* MapViewModel.swift */,
 			);
 			path = ViewModel;
@@ -258,6 +273,7 @@
 		A80E8F842764978000E457FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A8D1B45D276ADD7F003B0BD8 /* SeparateCollectionGuide */,
 				9F8FBC7B276AB6810028DC99 /* RecycleClassifier.mlmodel */,
 				9F8FBC7E276AB6A40028DC99 /* LICENSE.txt */,
 				9F8FBC7D276AB6A40028DC99 /* NOTICE.txt */,
@@ -305,6 +321,24 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A8D1B45A276ADCED003B0BD8 /* SeparateCollectionGuide */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1B45B276ADD2E003B0BD8 /* SeparateCollectionGuideViewModel.swift */,
+				A8D1B466276ADE4C003B0BD8 /* Observable.swift */,
+			);
+			path = SeparateCollectionGuide;
+			sourceTree = "<group>";
+		};
+		A8D1B45D276ADD7F003B0BD8 /* SeparateCollectionGuide */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1B45E276ADD8B003B0BD8 /* SeparateDischargeTip.swift */,
+				A8D1B460276ADD9E003B0BD8 /* TypeOfRecyclable.swift */,
+			);
+			path = SeparateCollectionGuide;
 			sourceTree = "<group>";
 		};
 		FF92362697074FB671C59AD3 /* Pods */ = {
@@ -443,12 +477,18 @@
 				9F8FBC7C276AB6810028DC99 /* RecycleClassifier.mlmodel in Sources */,
 				9F8FBC63276AA2BE0028DC99 /* PreviewView.swift in Sources */,
 				A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */,
+				A8D1B45F276ADD8B003B0BD8 /* SeparateDischargeTip.swift in Sources */,
 				A89B44382769244D001072D7 /* SeparateCollectionGuideViewController.swift in Sources */,
+				A8D1B465276ADDC9003B0BD8 /* SeparateDischargeTextResponse.swift in Sources */,
 				A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */,
+				A8D1B467276ADE4C003B0BD8 /* Observable.swift in Sources */,
 				9F8FBC66276AA3770028DC99 /* LodingViewController.swift in Sources */,
 				9F8FBC75276AB5A30028DC99 /* ImagePredictor.swift in Sources */,
+				A8D1B461276ADD9E003B0BD8 /* TypeOfRecyclable.swift in Sources */,
 				9F8FBC6D276AB09A0028DC99 /* HowToUseViewController.swift in Sources */,
+				A8D1B45C276ADD2E003B0BD8 /* SeparateCollectionGuideViewModel.swift in Sources */,
 				9F8FBC82276AC3E60028DC99 /* AnalyzeViewController.swift in Sources */,
+				A8D1B463276ADDB7003B0BD8 /* RecyclingGuidelineService.swift in Sources */,
 				9F8FBC6F276AB0D10028DC99 /* CameraViewController.swift in Sources */,
 				A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */,
 				9F8FBC71276AB0EC0028DC99 /* PhotoViewController.swift in Sources */,

@@ -13,4 +13,6 @@ pod 'NMapsMap'
  pod 'SWXMLHash'
  pod 'lottie-ios'
  pod 'Charts'
+ pod 'Kingfisher', '~> 7.0'
+ pod 'SwiftSoup'
 end
