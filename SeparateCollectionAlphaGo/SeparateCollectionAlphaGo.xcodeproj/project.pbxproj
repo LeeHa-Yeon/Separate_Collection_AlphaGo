@@ -23,11 +23,12 @@
 		9F8FBC82276AC3E60028DC99 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FBC81276AC3E60028DC99 /* AnalyzeViewController.swift */; };
 		A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */; };
 		A78BCECC2765C60300EA7E18 /* WasteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECB2765C60300EA7E18 /* WasteMapView.swift */; };
-		A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */; };
 		A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEDC2765F37E00EA7E18 /* LocationService.swift */; };
 		A78BCEDF2765F3C000EA7E18 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BCEDE2765F3C000EA7E18 /* MapViewModel.swift */; };
-		A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */; };
+		A7E2C9E927689C7300FCF54A /* Waste.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C9E827689C7300FCF54A /* Waste.swift */; };
 		A7E2C9EB2768A02600FCF54A /* TrashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C9EA2768A02600FCF54A /* TrashService.swift */; };
+		A7E2CA15276B46ED00FCF54A /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2CA14276B46ED00FCF54A /* APIResponse.swift */; };
+		A7E2CA17276B46F500FCF54A /* DetailInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2CA16276B46F500FCF54A /* DetailInfo.swift */; };
 		A80E8F682764937600E457FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F672764937600E457FD /* AppDelegate.swift */; };
 		A80E8F6A2764937600E457FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E8F692764937600E457FD /* SceneDelegate.swift */; };
 		A80E8F712764937700E457FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80E8F702764937700E457FD /* Assets.xcassets */; };
@@ -70,11 +71,12 @@
 		9F8FBC81276AC3E60028DC99 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
 		A78BCEC727649B6D00EA7E18 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A78BCECB2765C60300EA7E18 /* WasteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteMapView.swift; sourceTree = "<group>"; };
-		A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMap.swift; sourceTree = "<group>"; };
 		A78BCEDC2765F37E00EA7E18 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		A78BCEDE2765F3C000EA7E18 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewModel.swift; path = SeparateCollectionAlphaGo/Source/Service/MapViewModel.swift; sourceTree = SOURCE_ROOT; };
-		A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAPIResponse.swift; sourceTree = "<group>"; };
+		A7E2C9E827689C7300FCF54A /* Waste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waste.swift; sourceTree = "<group>"; };
 		A7E2C9EA2768A02600FCF54A /* TrashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashService.swift; sourceTree = "<group>"; };
+		A7E2CA14276B46ED00FCF54A /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		A7E2CA16276B46F500FCF54A /* DetailInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfo.swift; sourceTree = "<group>"; };
 		A80E8F642764937600E457FD /* SeparateCollectionAlphaGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeparateCollectionAlphaGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80E8F672764937600E457FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A80E8F692764937600E457FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,8 +181,10 @@
 		A7E2C9E727689C6400FCF54A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				A7E2C9E827689C7300FCF54A /* OpenAPIResponse.swift */,
+				A7E2C9E827689C7300FCF54A /* Waste.swift */,
 				A8D1B464276ADDC9003B0BD8 /* SeparateDischargeTextResponse.swift */,
+				A7E2CA14276B46ED00FCF54A /* APIResponse.swift */,
+				A7E2CA16276B46F500FCF54A /* DetailInfo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -311,7 +315,6 @@
 			isa = PBXGroup;
 			children = (
 				A78BCECB2765C60300EA7E18 /* WasteMapView.swift */,
-				A78BCECD2765C6DB00EA7E18 /* NaverMap.swift */,
 			);
 			path = WasteMap;
 			sourceTree = "<group>";
@@ -497,7 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A78BCECE2765C6DB00EA7E18 /* NaverMap.swift in Sources */,
+				A7E2CA17276B46F500FCF54A /* DetailInfo.swift in Sources */,
 				9F8FBC7A276AB6170028DC99 /* CGImagePropertyOrientation.swift in Sources */,
 				A80E8F812764968D00E457FD /* TabbarViewController.swift in Sources */,
 				A78BCEC827649B6D00EA7E18 /* HomeViewController.swift in Sources */,
@@ -514,6 +517,7 @@
 				A8D1B465276ADDC9003B0BD8 /* SeparateDischargeTextResponse.swift in Sources */,
 				A7E2C9E927689C7300FCF54A /* OpenAPIResponse.swift in Sources */,
 				A8D1B471276B3B7C003B0BD8 /* UIImageExtension.swift in Sources */,
+				A7E2C9E927689C7300FCF54A /* Waste.swift in Sources */,
 				A8D1B467276ADE4C003B0BD8 /* Observable.swift in Sources */,
 				9F8FBC66276AA3770028DC99 /* LodingViewController.swift in Sources */,
 				A8D1B476276B440C003B0BD8 /* TextGuideDetailViewModel.swift in Sources */,
@@ -526,6 +530,7 @@
 				9F8FBC82276AC3E60028DC99 /* AnalyzeViewController.swift in Sources */,
 				A8D1B463276ADDB7003B0BD8 /* RecyclingGuidelineService.swift in Sources */,
 				9F8FBC6F276AB0D10028DC99 /* CameraViewController.swift in Sources */,
+				A7E2CA15276B46ED00FCF54A /* APIResponse.swift in Sources */,
 				A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */,
 				9F8FBC71276AB0EC0028DC99 /* PhotoViewController.swift in Sources */,
 				A80E8F6A2764937600E457FD /* SceneDelegate.swift in Sources */,
@@ -672,7 +677,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7W64WHVKVN;
+				DEVELOPMENT_TEAM = CH57QT784A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeparateCollectionAlphaGo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "FullScreen Cam uses the camera to take photos and video";
@@ -688,7 +693,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo.mumu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -704,7 +709,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7W64WHVKVN;
+				DEVELOPMENT_TEAM = CH57QT784A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeparateCollectionAlphaGo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "FullScreen Cam uses the camera to take photos and video";
@@ -720,7 +725,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo.mumu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.SCAlphaGo.SeparateCollectionAlphaGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

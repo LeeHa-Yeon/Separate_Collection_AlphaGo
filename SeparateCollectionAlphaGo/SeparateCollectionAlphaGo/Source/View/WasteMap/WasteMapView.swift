@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct WasteMapView: View {
+    @ObservedObject var mapViewModel: MapViewModel = MapViewModel()
+    
     var body: some View {
-        NavigationView {
-            NaverMapView()
-                .navigationBarTitleDisplayMode(.inline)
-                .navigationTitle("지도")
-        }
+        Text("")
     }
 }
 

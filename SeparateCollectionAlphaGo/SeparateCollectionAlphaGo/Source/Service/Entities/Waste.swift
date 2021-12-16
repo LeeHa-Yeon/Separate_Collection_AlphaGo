@@ -1,5 +1,5 @@
 //
-//  OpenAPIResponse.swift
+//  Waste.swift
 //  SeparateCollectionAlphaGo
 //
 //  Created by 송정훈 on 2021/12/14.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct OpenAPIResponse:Codable {
+struct Waste:Codable {
     let SIGUN_CD :String?    //시군코드
     let SIGUN_NM :String?    //시군명
     let SIDO_NM :String?   //시도명
