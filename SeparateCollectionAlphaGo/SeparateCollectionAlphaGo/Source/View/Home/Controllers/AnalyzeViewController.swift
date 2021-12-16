@@ -100,3 +100,90 @@ class AnalyzeViewController: UIViewController {
     // MARK: - objc Functions
     
 }
+
+
+extension AnalyzeViewController {
+    // MARK: Main storyboard updates
+    /// Updates the storyboard's image view.
+    /// - Parameter image: An image.
+    func updateImage(_ image: UIImage) {
+        DispatchQueue.main.async {
+            self.photoImg.image = image
+        }
+    }
+    
+    /// Updates the storyboard's prediction label.
+    /// - Parameter message: A prediction or message string.
+    /// - Tag: updatePredictionLabel
+    func updatePredictionLabel(_ message: String) {
+        DispatchQueue.main.async {
+            self.predictionLabel.text = message
+        }
+    }
+    /// Notifies the view controller when a user selects a photo in the camera picker or photo library picker.
+    /// - Parameter photo: A photo from the camera or photo library.
+    func userSelectedPhoto(_ photo: UIImage) {
+        updateImage(photo)
+        updatePredictionLabel("Making predictions for the photo...")
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.classifyImage(photo)
+            DispatchQueue.main.async {
+                self.explanationLabel.text = "\(ImagePredictor.typeArr[0])가(이) 전체 중에 \n\(ImagePredictor.valueArr[0])%로 가장 높게 분석됨.\n올바르게 분리수거해주세요."
+                self.setChart(dataPoints: ImagePredictor.typeArr, values: ImagePredictor.valueArr)
+                ImagePredictor.typeArr.removeAll()
+                ImagePredictor.valueArr.removeAll()
+            }
+        }
+        
+        
+    }
+    
+}
+
+extension AnalyzeViewController {
+    // MARK: Image prediction methods
+    /// Sends a photo to the Image Predictor to get a prediction of its content.
+    /// - Parameter image: A photo.
+    private func classifyImage(_ image: UIImage) {
+        do {
+            try self.imagePredictor.makePredictions(for: image,
+                                                       completionHandler: imagePredictionHandler)
+        } catch {
+            print("Vision was unable to make a prediction...\n\n\(error.localizedDescription)")
+        }
+    }
+    
+    /// The method the Image Predictor calls when its image classifier model generates a prediction.
+    /// - Parameter predictions: An array of predictions.
+    /// - Tag: imagePredictionHandler
+    private func imagePredictionHandler(_ predictions: [ImagePredictor.Prediction]?) {
+        guard let predictions = predictions else {
+            updatePredictionLabel("No predictions. (Check console log.)")
+            return
+        }
+        
+        let formattedPredictions = formatPredictions(predictions)
+        let predictionString = formattedPredictions.joined(separator: "\n")
+        updatePredictionLabel(predictionString)
+    }
+    
+    /// Converts a prediction's observations into human-readable strings.
+    /// - Parameter observations: The classification observations from a Vision request.
+    /// - Tag: formatPredictions
+    private func formatPredictions(_ predictions: [ImagePredictor.Prediction]) -> [String] {
+        // Vision sorts the classifications in descending confidence order.
+        let topPredictions: [String] = predictions.prefix(predictionsToShow).map { prediction in
+            var name = prediction.classification
+            
+            // For classifications with more than one name, keep the one before the first comma.
+            if let firstComma = name.firstIndex(of: ",") {
+                name = String(name.prefix(upTo: firstComma))
+            }
+            
+            return "\(name) - \(prediction.confidencePercentage)%"
+        }
+        
+        return topPredictions
+    }
+}
