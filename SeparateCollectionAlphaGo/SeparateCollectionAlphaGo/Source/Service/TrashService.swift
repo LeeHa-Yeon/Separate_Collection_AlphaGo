@@ -25,15 +25,22 @@ class TrashService {
         case unknownError
     }
     
-    func search(_ word: String) {
+    func search(_ word: String) -> AnyPublisher<OpenApiResponse, Error> {
         let parameters: [String: Any] = [
             "Type": "json",
-            "SIGUNGU_NM": word,
+            "SIGUN_NM": word,
         ]
         let pullPath = self.endPoint + "?\(apiKey!)"
-        AF.request(pullPath, parameters: parameters).validate().publishDecodable(type: OpenApiResponse.self).result().sink {
-            print($0)
-        }
-        .store(in: &self.storage)
+        return Future<OpenApiResponse, Error> { promise in
+            AF.request(pullPath, parameters: parameters).validate().publishDecodable(type: OpenApiResponse.self).result().sink { result in
+                switch result {
+                case let .success(response):
+                    promise(.success(response))
+                case .failure:
+                    promise(.failure(APIError.unknownError))
+                }
+            }
+            .store(in: &self.storage)
+        }.eraseToAnyPublisher()
     }
 }

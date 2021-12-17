@@ -11,7 +11,18 @@ struct WasteMapView: View {
     @ObservedObject var mapViewModel: MapViewModel = MapViewModel()
     
     var body: some View {
-        Text("")
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 1) {
+                    ForEach(Array(mapViewModel.wastes.enumerated()), id: \.offset) { items in
+                        let waste = items.element
+                        WasteListCell(waste: waste)
+                    }
+                }
+            }
+            .navigationTitle("분리수거 요령")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 

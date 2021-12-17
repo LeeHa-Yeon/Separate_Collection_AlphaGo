@@ -10,13 +10,24 @@ import Combine
 
 class MapViewModel: ObservableObject {
     @Published var address: String? = nil
+    @Published var wastes: [Waste] = []
     private var storage = Set<AnyCancellable>()
     private let locationService: LocationService = LocationService()
     private let trashService: TrashService = TrashService()
 
     
     init() {
-        trashService.search("강남구")
+        trashService.search("의왕시")
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { com in
+                if case .failure = com {
+                    self.wastes = []
+                }
+            }, receiveValue: { response in
+                self.wastes = (response.Livelhwstemisninfo?.last!.row!)!
+                print(self.wastes)
+            })
+            .store(in: &self.storage)
     }
     
     func getAddress() {
