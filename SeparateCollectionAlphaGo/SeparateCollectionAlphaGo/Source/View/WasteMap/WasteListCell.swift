@@ -36,7 +36,7 @@ struct WasteListCell: View {
                     HStack {
                         Text(waste.SIDO_NM! + " " + waste.SIGNGU_NM! + " " + waste.MANAGE_ZONE_NM!)
                         NavigationLink {
-//                            OrderHistoryDetailView(order: self.order)
+                            WasteDetailView(waste: self.waste)
                         } label: {
                             Text(">")
                                 .foregroundColor(.gray)
