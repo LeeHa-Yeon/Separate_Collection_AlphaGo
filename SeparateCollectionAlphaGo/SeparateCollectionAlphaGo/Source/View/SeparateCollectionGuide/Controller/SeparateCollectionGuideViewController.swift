@@ -58,7 +58,9 @@ class SeparateCollectionGuideViewController: UIViewController {
     //MARK: - Functions
     @objc func ministryOfEnvironmentGuidelineBtnPressed(_ sender: UIButton){
         //TODO: 화면 이동 - 환경부 분리배출 가이드라인
-        exceptAlert()
+        let envGuidelineVC = EnvironmentGuidelinesViewController()
+        
+        self.navigationController?.pushViewController(envGuidelineVC, animated: true)
     }
     
     @objc func separationOfRecyclablesPressed(_ sender: UIButton){
@@ -75,16 +77,6 @@ class SeparateCollectionGuideViewController: UIViewController {
         textDetailVC.delegate = self.viewModel
         
         self.navigationController?.pushViewController(textDetailVC, animated: true)
-    }
-    
-    func exceptAlert(){
-        let alert = UIAlertController(title: "누르지마세요", message: "할까말까 고민중임니다\n환경부 분리배출 가이드라인 이미지들 넣을까해요.", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "그래여", style: .default) { (ok) in
-            
-        }
-        alert.addAction(ok)
-        
-        self.present(alert, animated: true, completion: nil)
     }
     
     func setNavigationItem(){
