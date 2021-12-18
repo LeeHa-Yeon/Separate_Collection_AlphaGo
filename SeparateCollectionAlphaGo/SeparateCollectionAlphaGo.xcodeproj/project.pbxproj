@@ -50,6 +50,7 @@
 		A8D1B471276B3B7C003B0BD8 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B470276B3B7C003B0BD8 /* UIImageExtension.swift */; };
 		A8D1B474276B3E23003B0BD8 /* SeparateCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B473276B3E23003B0BD8 /* SeparateCollectionCell.swift */; };
 		A8D1B476276B440C003B0BD8 /* TextGuideDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B475276B440C003B0BD8 /* TextGuideDetailViewModel.swift */; };
+		A8D1B478276E71B2003B0BD8 /* EnvironmentGuidelinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1B477276E71B2003B0BD8 /* EnvironmentGuidelinesViewController.swift */; };
 		CDCCE11B360F65381FD3B008 /* Pods_SeparateCollectionAlphaGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DB2E3546E8121EC82092E1 /* Pods_SeparateCollectionAlphaGo.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		A8D1B470276B3B7C003B0BD8 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		A8D1B473276B3E23003B0BD8 /* SeparateCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateCollectionCell.swift; sourceTree = "<group>"; };
 		A8D1B475276B440C003B0BD8 /* TextGuideDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGuideDetailViewModel.swift; sourceTree = "<group>"; };
+		A8D1B477276E71B2003B0BD8 /* EnvironmentGuidelinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentGuidelinesViewController.swift; sourceTree = "<group>"; };
 		F01001CCF31CAA7247BC2B05 /* Pods-SeparateCollectionAlphaGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparateCollectionAlphaGo.release.xcconfig"; path = "Target Support Files/Pods-SeparateCollectionAlphaGo/Pods-SeparateCollectionAlphaGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -341,6 +343,7 @@
 				A89B44372769244D001072D7 /* SeparateCollectionGuideViewController.swift */,
 				A8D1B46C276B2FCE003B0BD8 /* ImageGuideDetailViewController.swift */,
 				A8D1B46E276B2FE7003B0BD8 /* TextGuideDetailViewController.swift */,
+				A8D1B477276E71B2003B0BD8 /* EnvironmentGuidelinesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				A8D1B45C276ADD2E003B0BD8 /* SeparateCollectionGuideViewModel.swift in Sources */,
 				9F8FBC82276AC3E60028DC99 /* AnalyzeViewController.swift in Sources */,
 				A8D1B463276ADDB7003B0BD8 /* RecyclingGuidelineService.swift in Sources */,
+				A8D1B478276E71B2003B0BD8 /* EnvironmentGuidelinesViewController.swift in Sources */,
 				9F8FBC6F276AB0D10028DC99 /* CameraViewController.swift in Sources */,
 				A7E2CA15276B46ED00FCF54A /* APIResponse.swift in Sources */,
 				A78BCEDD2765F37E00EA7E18 /* LocationService.swift in Sources */,
